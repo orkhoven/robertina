@@ -20,7 +20,7 @@
 
     <div class="wrapper">
         <form action="#" method="POST" id="submit-predict">
-            <h1>Prédiction des ventes des clients de Cegid</h1>
+            <h1>Prédiction des ventes des clients de Sanofi</h1>
             <div id="wizard">
 
                 <h4></h4>
@@ -32,7 +32,7 @@
                         </a> -->
                     </div>
                     <div class="form-holder active">
-                        <input type="number" name='GL_TOTALTTC' min="0" placeholder="Veuillez entrer le chiffre d'affaire" class="form-control">
+                        <input type="number" name='Total_Prix' min="0" placeholder="Veuillez entrer le chiffre d'affaire" class="form-control">
                     </div>
                     <div class="form-holder">
                         <select id="month" name='month' class="form-control">
@@ -135,7 +135,7 @@
                 
                 $(".popup-overlay, .popup-content").addClass("active");
 
-                var gl = $('input[name=GL_TOTALTTC]').val();
+                var gl = $('input[name=Total_Prix]').val();
                 console.log("gl", gl);
 
                 var mois = $("#month").val();
